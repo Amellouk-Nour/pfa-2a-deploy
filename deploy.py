@@ -24,7 +24,7 @@ def predict():
     X = vectorizer.transform(text)
     predictions = model.predict(X)[0]
     
-    return render_template(MAIN_PATH, predictions=predictions)
+    return render_template(MAIN_PATH, prediction=predictions)
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0',port='80')
