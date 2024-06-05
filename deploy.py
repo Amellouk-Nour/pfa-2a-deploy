@@ -18,6 +18,7 @@ def about_page():
 
 @app.route('/predict', methods=['POST'])
 def predict():
+    # predicting 
     input_text = request.form['inputText']
     print(input_text)
     text = [input_text]
