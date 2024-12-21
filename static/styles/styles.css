@@ -286,6 +286,7 @@ input[type="text"] {
   @media (max-width: 600px) {
     .container{
       max-width: 350px;
+      margin: 70px auto 50px;
     }
   }
 
@@ -306,6 +307,7 @@ input[type="text"] {
   
     .container{
       max-width: 250px;
+      margin: 50px auto 50px;
     }
     .frame1 {
       padding-left: 25px;
