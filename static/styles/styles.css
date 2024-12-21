@@ -3,17 +3,18 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 body{
     background-color: #faf6f6;
+
     
 }
 header{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    right: 0%;
+    width: 100%;
+    justify-content: space-between;
     background: #FFFFFF;
     box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -26,6 +27,7 @@ header{
     width: 160px;
     margin-left: 30px;
 }
+
 .frame1{
     display: flex;
     flex-direction: column;
@@ -214,6 +216,102 @@ input[type="text"] {
   .element1{
     width: 250px;
   }
+  @media (max-width: 1000px) {
+    .element1{
+      width: 150px;
+      padding-right: 30px;
+    }
+
+    .btn::before {
+      content: '';
+      z-index: -1;
+      background-color: var(--color);
+      border: 2px solid black;
+      border-radius: 2rem;
+      width: 99%;
+      height: 90%;
+      position: absolute;
+      transform: rotate(10deg);
+      transition: .5s;
+      opacity: 0.2;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .element1{
+      display: none;
+    }
+    .element{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  .frame1{
+ 
+    padding-left: 60px;
+  }
+  header{
+    height: 90px;
+  }
+}
+  @media (max-width: 800px) {
+    .element{
+      width: 100px;
+    }
+    .frame1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 70px;
+      justify-content: center;
+      margin: 1%;
+  }
+  .frame1 h1 {
+    font-weight: 800;
+    font-size: 16px;
+  }
+  .logo{
+    width: 100px;
+  }
+  .Btn{
+    height: 35px;
+    width:  35px;
+  }
+  .container{
+    max-width: 500px;
+  }
+  }
+
+  @media (max-width: 600px) {
+    .container{
+      max-width: 350px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .frame1 {
+      padding-left: 55px;
+    }
+    .frame1 h1 {
+      font-weight: 800;
+      font-size: 8px;
+    }
+    .logo{
+      width: 70px;
+    }
+  }
+
+  @media (max-width: 400px) {
+  
+    .container{
+      max-width: 250px;
+    }
+    .frame1 {
+      padding-left: 25px;
+    }
+  }
+
 
   .btn {
     --color: #ffcd39;
